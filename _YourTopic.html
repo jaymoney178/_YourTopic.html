@@ -1,0 +1,61 @@
+<html>
+    <script>
+let TVShows = {
+  name: "Friends",
+  network: "NBC",
+  genre: "Sitcom",
+  rating: 8.9,
+  seasons: 10,
+  episodes: 236,
+  characters: ["Rachel", "Monica", "Phoebe", "Joey", "Chandler", "Ross"],
+  releaseYear: 1994,
+  spinOffs: ["Joey"],
+  creator: "David Crane and Marta Kauffman"
+}
+
+// Get the container element from HTML
+const container = document.querySelector(".container");
+
+// Create the elements needed to display the TV show information
+const title = document.createElement("h1");
+const image = document.createElement("img");
+const description = document.createElement("p");
+
+// Set the properties of the elements
+title.textContent = TVShows.name;
+image.src = "https://via.placeholder.com/300x400.png?text=Friends";
+description.textContent = `Friends is a popular TV show that aired on NBC from ${TVShows.releaseYear} to ${TVShows.releaseYear + TVShows.seasons - 1}. It has ${TVShows.episodes} episodes in ${TVShows.seasons} seasons and is considered one of the best ${TVShows.genre} shows of all time. The show revolves around the lives of ${TVShows.characters.join(", ")} and their daily experiences in New York City.`;
+
+// Append the elements to the container
+container.appendChild(title);
+container.appendChild(image);
+container.appendChild(description);
+
+
+let MyTopic = {
+  name: "Coffee",
+  origin: "Ethiopia",
+  type: "Beverage",
+  caffeine: true,
+  varieties: ["Arabica", "Robusta"],
+  preparation: ["Espresso", "Drip", "French Press"],
+  popularCountries: ["USA", "Brazil", "Vietnam"],
+  history: "Coffee was discovered in Ethiopia in the 9th century and became popular in Arabia in the 15th century. It then spread to Europe and the rest of the world.",
+  healthBenefits: ["Boosts physical performance", "Reduces risk of liver disease", "May lower risk of type 2 diabetes"]
+}
+
+// Get the container element from HTML
+const container = document.querySelector(".container");
+
+// Create the elements needed to display the topic information
+const title = document.createElement("h1");
+const image = document.createElement("img");
+const description = document.createElement("p");
+
+// Set the properties of the elements
+title.textContent = MyTopic.name;
+image.src = "https://via.placeholder.com/300x400.png?text=Coffee";
+description.textContent = `Coffee is a popular ${MyTopic.type} that originated in ${MyTopic.origin}. It contains caffeine, which is a natural stimulant that can help boost mental and physical performance. There are two main varieties of coffee beans: ${MyTopic.varieties.join(" and ")}. It can be prepared in many ways, including ${MyTopic.preparation.join(", ")}. Coffee is enjoyed all over the world, especially
+
+</script>
+</html>
